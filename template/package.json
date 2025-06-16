@@ -4,20 +4,37 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "lint": "eslint \"src/**/*.{ts,tsx}\" --max-warnings 0",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
     "test": "vitest run",
-    "dev": "vitest",
+    "test:watch": "vitest",
     "format": "prettier --check ."
   },
-  "dependencies": {},
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "next": "^15.0.0",
+    "openai": "^5.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^3.4.0"
+  },
   "devDependencies": {
     "@types/node": "^20.11.17",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.34.0",
+    "@typescript-eslint/parser": "^8.34.0",
+    "autoprefixer": "^10.4.17",
     "eslint": "^8.57.0",
+    "eslint-config-next": "^15.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-unused-imports": "^3.1.0",
+    "postcss": "^8.4.35",
     "prettier": "^3.2.5",
     "typescript": "^5.4.2",
     "vitest": "^1.4.0"
   }
-} 
+}
